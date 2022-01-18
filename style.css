@@ -1,0 +1,28 @@
+body {
+ display:flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+a {
+ text-decoration: none;
+ color: #F9FAF8;
+}
+
+.header{
+ display: flex;
+ justify-content: space-between;
+ gap: 8px;
+ padding: 8px;
+ background-color: #1F2937;
+ color: #F9FAF8;
+}
+
+.hero{
+ background-color: #1F2937;
+ color: white
+}
+
+.quote {
+ background-color: #E5E7EB;
+}
