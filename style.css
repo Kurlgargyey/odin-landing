@@ -14,12 +14,20 @@ body {
 a {
  text-decoration: none;
  color: #E5E7EB;
+ margin: 8px;
 }
 
 h1 {
  color: #F9FAF8;
  font-size: 48px;
  font-weight: bolder;
+ margin: 0;
+ padding: 0;
+}
+
+h2 {
+ margin: 0;
+ padding: 0;
 }
 
 img {
@@ -30,20 +38,34 @@ img {
 button {
  background-color: #3882F6;
  color: #F9FAF8;
+ font-weight: bold;
  flex: 0;
+ border-radius: 8px;
+ padding: 4px 24px;
+ white-space: nowrap;
 }
 
 .header{
  display: flex;
  justify-content: space-between;
+ align-items: center;
  gap: 8px;
- padding: 8px;
+ padding: 8px 112px;
  background-color: #1F2937;
  color: #F9FAF8;
 }
 
+.footer {
+ background-color: #1F2937;
+ color: #F9FAF8;
+ display: flex;
+ justify-content: center;
+ padding: 32px;
+}
+
 .header-logo{
  font-size: 24px;
+ font-weight: bold;
 }
 
 .hero{
@@ -51,6 +73,10 @@ button {
  color: #E5E7EB;
  display: flex;
  flex-direction: row;
+ justify-content: center;
+ align-items: flex-start;
+ padding: 80px 112px;
+ gap: 16px;
 }
 
 .hero-text {
@@ -58,22 +84,25 @@ button {
  flex-direction: column;
  justify-content: space-between;
  align-items: flex-start;
+ gap: 8px;
 }
 
 .hero-image {
  width:400px;
- height: 300px;
+ height: 200px;
 }
 
 .info {
  display: flex;
  flex-direction: column;
  text-align: center;
+ padding: 40px 112px;
 }
 
 .info-content {
  display:flex;
  flex-direction: row;
+ gap: 8px;
 }
 
 .item {
@@ -81,22 +110,46 @@ button {
  flex-direction: column;
 }
 
+.item > img {
+ border: 2px solid #3882F6;
+ border-radius: 8px;
+}
+
 .quote {
  background-color: #E5E7EB;
  font-weight: bold;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-end;
+ align-items: flex-end;
+ padding: 40px 112px;
 }
 
 .quote-body {
  font-size: 36px;
  font-style: italic;
- font-weight: lighter;
+ font-weight: 300;
  color: #1F2937;
 }
 
 .cta {
  background-color: #3882F6;
+ color: #F9FAF8;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ justify-content: space-between;
+ margin: 80px 112px;
+ padding: 40px 80px;
+ border-radius: 8px;
+ 
 }
 
+.cta-text {
+ display: flex;
+ flex-direction: column;
+ gap: 8px;
+}
 .cta > button {
  border: 1px solid white;
 }
