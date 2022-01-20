@@ -6,6 +6,7 @@ body {
  display:flex;
  flex-direction: column;
  justify-content: space-between;
+
  font-family: Roboto, sans-serif;
  margin:0;
  border: 0;
@@ -66,6 +67,7 @@ button {
 .header-logo{
  font-size: 24px;
  font-weight: bold;
+ margin-right: auto;
 }
 
 .hero{
@@ -74,7 +76,7 @@ button {
  display: flex;
  flex-direction: row;
  justify-content: center;
- align-items: flex-start;
+ align-items: center;
  padding: 80px 112px;
  gap: 16px;
 }
@@ -85,6 +87,7 @@ button {
  justify-content: space-between;
  align-items: flex-start;
  gap: 8px;
+ max-width: 400px;
 }
 
 .hero-image {
@@ -96,6 +99,7 @@ button {
  display: flex;
  flex-direction: column;
  text-align: center;
+ flex-shrink: 1;
  padding: 56px 160px;
  gap: 32px;
 }
@@ -104,17 +108,21 @@ button {
  display:flex;
  flex-direction: row;
  justify-content: space-between;
- gap: 8px;
+ margin: auto;
+ flex-shrink: 1;
+ gap: 48px;
 }
 
 .item {
  display: flex;
  flex-direction: column;
  align-items: center;
+ flex-shrink: 1;
  width: 150px;
 }
 
 .item > img {
+ flex-shrink: 1;
  border: 2px solid #3882F6;
  border-radius: 8px;
  width: 150px;
@@ -131,11 +139,21 @@ button {
  padding: 56px 160px;
 }
 
+.quote-source {
+ font-style: normal;
+ font-weight: 600;
+ font-size: 24px;
+ max-width: 800px;
+ text-align: end;
+}
+
 .quote-body {
  font-size: 36px;
  font-style: italic;
  font-weight: 300;
  color: #1F2937;
+ margin: auto;
+ max-width: 800px;
 }
 
 .cta {
@@ -145,10 +163,11 @@ button {
  flex-direction: row;
  align-items: center;
  justify-content: space-between;
- margin: 80px 112px;
+ margin: 80px auto;
  padding: 40px 80px;
  border-radius: 8px;
- 
+ max-width: 800px;
+ flex-shrink: 1;
 }
 
 .cta-text {
